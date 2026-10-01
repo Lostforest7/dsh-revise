@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+.dsh-revise/
+**/.dsh-revise/
+playwright-report/
+test-results/
+work/
+*.tgz
+.env
+.env.*
+!.env.example

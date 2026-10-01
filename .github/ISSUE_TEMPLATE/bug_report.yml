@@ -1,0 +1,30 @@
+name: Bug report / 问题反馈
+description: Report an installation, selection, capture, or review problem.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions / 版本
+      description: DSH, Node, Vite, React, OS and browser versions.
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where / 使用环境
+      options:
+        - DSH Web
+        - Standalone local preview
+        - DSH Desktop (not yet verified)
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction / 复现步骤
+      description: Include the expected result and what actually happened. Use a minimal example when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 截图或错误
+      description: Remove API keys, launch tokens, private page content and source code before sharing.
